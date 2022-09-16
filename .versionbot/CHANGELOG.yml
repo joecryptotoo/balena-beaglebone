@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add am335x-boneblack-uboot-univ to rootfs for people using gpios on
+        BeagleBone Black
+      hash: 86f71b70315f24952f3fd4ba8e2707b888f4b881
+      body: >
+        Include this overlay so that users of BeagleBone Black can load it and
+        use the gpios.
+      footer:
+        Changelog-entry: Add am335x-boneblack-uboot-univ to rootfs for people using
+          gpios on BeagleBone Black
+        changelog-entry: Add am335x-boneblack-uboot-univ to rootfs for people using
+          gpios on BeagleBone Black
+      author: Aodhan Murray
+      nested: []
+  version: 2.103.1+rev2
+  date: 2022-09-16T07:58:14.694Z
+- commits:
     - subject: Update contracts to 7ea918011dc38f509a7ae3bce30c3391bc839dd9
       hash: ebc74f621de8900b2ed1e3aafc42498c673367d8
       body: Update contracts
