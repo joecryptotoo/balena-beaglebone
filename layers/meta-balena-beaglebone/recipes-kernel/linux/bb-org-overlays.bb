@@ -13,6 +13,7 @@ SRC_URI = " \
     file://0001-Install-overlays-in-a-different-folder.patch \
     file://SDS-CAPE-00A0.dts \
     file://BB-I2C2N-00A0.dts \
+    file://BB-BUMBLEBEE-00A0.dts \
     file://0001-Remove-pin-tool.patch \
 "
 
@@ -26,6 +27,7 @@ FILES_${PN} += "/boot/overlays"
 do_compile_prepend () {
     cp ${WORKDIR}/BB-I2C2N-00A0.dts ${S}/src/arm/
     cp ${WORKDIR}/SDS-CAPE-00A0.dts ${S}/src/arm/
+    cp ${WORKDIR}/BB-BUMBLEBEE-00A0.dts ${S}/src/arm/
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
